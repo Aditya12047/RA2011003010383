@@ -1,7 +1,7 @@
 {
-  "name": "train_central",
+  "name": "train",
   "version": "1.0.0",
-  "description": "",
+  "description": "test",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
