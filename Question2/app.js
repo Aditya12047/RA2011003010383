@@ -21,18 +21,4 @@ app.get('/numbers', async (req, res) => {
                 console.error(`Error fetching data from ${url}: ${error.message}`);
                 return [];
             }
-        });
-
-        const fetchedData = await Promise.all(fetchPromises);
-        const mergedNumbers = Array.from(new Set(fetchedData.flat())).sort((a, b) => a - b);
-
-        res.json({ numbers: mergedNumbers });
-    } catch (error) {
-        console.error('Error:', error.message);
-        res.status(500).json({ error: 'An error occurred' });
-    }
-});
-
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+       
